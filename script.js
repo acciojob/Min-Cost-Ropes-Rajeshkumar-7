@@ -9,7 +9,7 @@ function mincost(arr)
 	    let b = arr.shift();
 		sum += a + b;
 	    arr.push(a + b);
-	    arr.sort();
+	    arr.sort((a,b)=>a-b);
 	}
 	return sum;
 }
